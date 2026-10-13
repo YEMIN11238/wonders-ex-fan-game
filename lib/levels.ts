@@ -1,0 +1,87 @@
+export type LevelId = 1 | 2 | 3 | 4;
+export const LEVEL_ORDER: LevelId[] = [1, 2, 3, 4];
+export const nextLevel = (level: LevelId): LevelId =>
+  LEVEL_ORDER[(LEVEL_ORDER.indexOf(level) + 1) % LEVEL_ORDER.length];
+export const levelLabel = (level: LevelId) =>
+  ['第一关', '第二关', '第三关', '第四关'][level - 1];
+export const LEVELS = {
+  1: {
+    name: '竹影古祠',
+    boss: '赤翼魔将',
+    background: '/assets/bamboo-shrine.jpg',
+    platforms: [
+      { x: 410, y: 350, w: 175 },
+      { x: 755, y: 305, w: 210 },
+      { x: 1120, y: 365, w: 180 },
+      { x: 1360, y: 360, w: 110 },
+      { x: 1450, y: 285, w: 240 },
+      { x: 1900, y: 345, w: 210 },
+      { x: 2380, y: 355, w: 210 },
+      { x: 2700, y: 300, w: 220 },
+      { x: 3070, y: 365, w: 200 },
+      { x: 3400, y: 300, w: 220 },
+      { x: 3770, y: 350, w: 210 },
+      { x: 4110, y: 285, w: 230 },
+      { x: 4440, y: 365, w: 190 },
+    ],
+  },
+  2: {
+    name: '秋暮村',
+    boss: '符印石灵',
+    background: '/assets/autumn-village.jpg',
+    platforms: [
+      { x: 340, y: 365, w: 185 },
+      { x: 680, y: 300, w: 210 },
+      { x: 1060, y: 355, w: 210 },
+      { x: 1420, y: 295, w: 200 },
+      { x: 1770, y: 355, w: 230 },
+      { x: 2250, y: 360, w: 220 },
+      { x: 2590, y: 300, w: 210 },
+      { x: 2930, y: 355, w: 240 },
+      { x: 3300, y: 290, w: 210 },
+      { x: 3640, y: 365, w: 210 },
+      { x: 3970, y: 300, w: 230 },
+      { x: 4340, y: 355, w: 230 },
+    ],
+  },
+  3: {
+    name: '暮色旧城',
+    boss: '钻甲领主',
+    background: '/assets/dusk-street.jpg',
+    platforms: [
+      { x: 360, y: 360, w: 180 },
+      { x: 580, y: 355, w: 110 },
+      { x: 730, y: 290, w: 220 },
+      { x: 1100, y: 350, w: 190 },
+      { x: 1350, y: 355, w: 110 },
+      { x: 1450, y: 285, w: 215 },
+      { x: 1810, y: 355, w: 220 },
+      { x: 2250, y: 355, w: 220 },
+      { x: 2590, y: 295, w: 220 },
+      { x: 2940, y: 360, w: 210 },
+      { x: 3280, y: 300, w: 220 },
+      { x: 3630, y: 355, w: 220 },
+      { x: 3980, y: 290, w: 240 },
+      { x: 4350, y: 355, w: 220 },
+    ],
+  },
+  4: {
+    name: '幽冥废殿',
+    boss: '苍镰领主',
+    background: '/assets/ruined-hall.jpg',
+    platforms: [
+      { x: 380, y: 360, w: 200 },
+      { x: 700, y: 300, w: 210 },
+      { x: 1050, y: 355, w: 220 },
+      { x: 1390, y: 290, w: 210 },
+      { x: 1730, y: 355, w: 230 },
+      { x: 2130, y: 360, w: 210 },
+      { x: 2460, y: 300, w: 220 },
+      { x: 2810, y: 355, w: 220 },
+      { x: 3160, y: 290, w: 220 },
+      { x: 3510, y: 355, w: 220 },
+      { x: 3860, y: 300, w: 230 },
+      { x: 4230, y: 355, w: 230 },
+    ],
+  },
+} as const;

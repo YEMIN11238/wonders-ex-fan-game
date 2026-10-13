@@ -1,0 +1,38 @@
+MAPLE ADVENTURE — AUDIO CREDITS
+
+All third-party audio below is released under CC0 1.0 Universal.
+License: https://creativecommons.org/publicdomain/zero/1.0/
+These are reusable recordings; no Bleach vs Naruto or Adventure King audio has been extracted.
+
+MUSIC — Juhani Junkala / SubspaceAudio
+forest.ogg: Exploration1 - Grasslands
+https://opengameart.org/content/jrpg-pack-1-exploration
+village.ogg: Town1 - Home Town
+dusk.ogg: Town2 - Where Time Stands Still
+https://opengameart.org/content/jrpg-pack-2-towns
+ruins.ogg: Evil2 - Catacombs
+https://opengameart.org/content/jrpg-pack-3-evil
+Original OGG loop recordings, renamed for map assignment.
+
+PUNCHES — Kenney, Impact Sounds
+https://kenney.nl/assets/impact-sounds
+punch-1/2/3: impactPunch_medium_000/001/003.ogg
+heavy-1/2: impactPunch_heavy_002/003.ogg
+
+ENERGY EFFECTS — Kenney, Sci-fi Sounds
+https://kenney.nl/assets/sci-fi-sounds
+shot.ogg: laserLarge_002.ogg
+beam.ogg: thrusterFire_000.ogg
+burst.ogg: explosionCrunch_002.ogg
+
+WEAPON SWISHES — qubodup
+https://opengameart.org/content/swish-bamboo-stick-weapon-swhoshes
+whoosh-1.wav / whoosh-2.wav / slash.wav: swosh-01/09/02.flac
+Converted to PCM WAV. Runtime playback applies short fades and pitch variation.
+
+CHARGE / TELEPORT — faxcorp, Electricity Game Sound Pack
+https://opengameart.org/content/electricity-game-sound-pack
+charge.wav: charge.wav
+warp.wav: teleport_1.wav
+
+Runtime mixing applies gain, stereo position, timed fades and selective looping.
