@@ -1,4 +1,5 @@
 import { actionCues, type AudioAction, type SoundKind } from './audio-cues';
+import { assetUrl } from './asset-url';
 import type { CombatEvent } from './combat';
 import type { LevelId } from './levels';
 
@@ -77,7 +78,7 @@ export function createGameAudio() {
   for (const file of Object.values(BANK).flat())
     requests.set(
       file,
-      fetch(`/assets/audio/sfx/${file}`)
+      fetch(assetUrl(`/assets/audio/sfx/${file}`))
         .then((r) => {
           if (!r.ok) throw new Error(file);
           return r.arrayBuffer();
@@ -123,7 +124,9 @@ export function createGameAudio() {
     }
     disposeDeck(previous);
     previous = current;
-    const audio = new Audio(`/assets/audio/music/${MAP_MUSIC[stage].file}`);
+    const audio = new Audio(
+      assetUrl(`/assets/audio/music/${MAP_MUSIC[stage].file}`),
+    );
     audio.loop = true;
     audio.preload = 'auto';
     const gain = context.createGain(),

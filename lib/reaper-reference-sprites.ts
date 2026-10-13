@@ -1,4 +1,5 @@
 import { decodeGif, type GifFrame } from './gif-frames';
+import { assetUrl } from './asset-url';
 import { drawSprite, sampleAnimation, type SpriteFrame } from './sprites';
 import {
   REAPER_BEAM,
@@ -109,7 +110,7 @@ function cleanScytheSwatch(frame: GifFrame): GifFrame {
 export async function loadReaperReferences() {
   const [scythe, teleport, cast, hurt] = await Promise.all(
     ['scythe', 'teleport', 'cast', 'hurt'].map(async (name) => {
-      const response = await fetch(`/assets/reaper-${name}.gif`);
+      const response = await fetch(assetUrl(`/assets/reaper-${name}.gif`));
       if (!response.ok) throw new Error(`Cannot load reaper ${name}`);
       return decodeGif(await response.arrayBuffer());
     }),

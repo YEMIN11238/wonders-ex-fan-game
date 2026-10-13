@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { assetUrl } from '../lib/asset-url';
 import {
   Dialog,
   DialogContent,
@@ -359,7 +360,7 @@ export default function Home() {
       new Promise<void>((resolve, reject) => {
         image.onload = () => resolve();
         image.onerror = reject;
-        image.src = src;
+        image.src = assetUrl(src);
       });
     Promise.all([
       load(bg, '/assets/bamboo-shrine.jpg'),
@@ -1815,7 +1816,7 @@ export default function Home() {
               </label>
               <a
                 className="audio-credits"
-                href="/assets/audio/CREDITS.txt"
+                href={assetUrl('/assets/audio/CREDITS.txt')}
                 target="_blank"
                 rel="noreferrer"
               >

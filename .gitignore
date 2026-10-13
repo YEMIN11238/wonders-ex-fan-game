@@ -33,8 +33,10 @@ yarn-error.log*
 .vercel
 next-env.d.ts
 /dist/
+/dist-demo/
 /.wrangler/
 /outputs/
+/.capture/
 /work/
 
 # local compiler state and original hosting metadata
